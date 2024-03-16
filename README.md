@@ -11,7 +11,7 @@ The data format is [Parquet](https://parquet.apache.org/docs/). To read these fi
 - In Python, you can use `pandas.read_parquet` ([Doc](https://pandas.pydata.org/docs/reference/api/pandas.read_parquet.html)).
 - In R, you can follow Apache's official [guidance](https://arrow.apache.org/docs/r/reference/read_parquet.html).
 - In MATLAB, see MathWork's [guidance](https://www.mathworks.com/help/matlab/parquet-files.html?lang=en).
-- In Stata, I have not tested the `stata-parquet` ([GitHub](https://github.com/mcaceresb/stata-parquet)). You can use Python to transform them into CSV format.
+- In Stata, I have not tested the `stata-parquet` ([GitHub](https://github.com/mcaceresb/stata-parquet)). You can use Python to transform them into CSV or `.dta` format.
 
 You can use URL to always read the most updated version of link tables:
 
@@ -28,7 +28,7 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 - `ciq_company_id-cusip`: Capital IQ Company ID to CUSIP
 - `ciq_company_id-ticker`: Capital IQ Company ID to ticker
 - `ciq_company_id`: Capital IQ Company ID.
-- `company_name`: Company name.
+- `company_name`: Company name (If you are doing fuzzy match on company name, try this dataset!)
 - `cusip`: [CUSIP](https://en.wikipedia.org/wiki/CUSIP).
 - `ds_code`: Refinitiv Datastream Code.
 - `ds_infocode`: Refinitiv Datastream InfoCode.
