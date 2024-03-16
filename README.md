@@ -31,7 +31,7 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 - `company_name`: Company name.
 - `cusip`: [CUSIP](https://en.wikipedia.org/wiki/CUSIP).
 - `ds_code`: Refinitiv Datastream Code.
-- `df_infocode`: Refinitiv Datastream InfoCode.
+- `ds_infocode`: Refinitiv Datastream InfoCode.
 - `ein`: U.S. [Employer Identification Number](https://en.wikipedia.org/wiki/Employer_Identification_Number)
 - `gvkey`: Global Company Key (GVKEY)
 - `gvkey_iid`: Global Company Key (GVKEY) and Issue ID (IID).
@@ -41,4 +41,6 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 - `sp_institutionid`: S&P Global institution ID.
 - `ticker`: Stock ticker.
 - `ws_sctyppi`: Refinitiv Worldscope Permanent ID.
+- `fisd_issue_id`: Mergent FISD bond issue ID map to ISIN.
+- `fisd_issuer_id`: Mergent FISD bond issuer ID map to ISIN.
 
