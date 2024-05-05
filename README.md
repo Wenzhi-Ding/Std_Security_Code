@@ -28,6 +28,7 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 - `ciq_company_id-cusip`: Capital IQ Company ID to CUSIP
 - `ciq_company_id-ticker`: Capital IQ Company ID to ticker
 - `ciq_company_id`: Capital IQ Company ID.
+- `company_fkey`: Company Fkey from Audit Analytics
 - `company_name`: Company name (If you are doing fuzzy match on company name, try this dataset!)
 - `cusip`: [CUSIP](https://en.wikipedia.org/wiki/CUSIP).
 - `ds_code`: Refinitiv Datastream Code.
