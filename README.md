@@ -1,6 +1,6 @@
 # Standardize Security Code
 
-This project aims to provide an integrated link tables between [ISIN](https://en.wikipedia.org/wiki/International_Securities_Identification_Number) and many other company/security identity codes.
+This project aims to provide integrated link tables between [ISIN](https://en.wikipedia.org/wiki/International_Securities_Identification_Number) and many other company/security identity codes.
 
 Since many link tables are too large, please refer to this [Dropbox](https://www.dropbox.com/sh/uab0vzoxh47wt2j/AACynrEpzjjrH_WD0F8VXX2Ra?dl=0) folder.
 
@@ -10,7 +10,7 @@ The data format is [Parquet](https://parquet.apache.org/docs/). To read these fi
 
 - In Python, you can use `pandas.read_parquet` ([Doc](https://pandas.pydata.org/docs/reference/api/pandas.read_parquet.html)).
 - In R, you can follow Apache's official [guidance](https://arrow.apache.org/docs/r/reference/read_parquet.html).
-- In MATLAB, see MathWork's [guidance](https://www.mathworks.com/help/matlab/parquet-files.html?lang=en).
+- In MATLAB, see MathWorks [guidance](https://www.mathworks.com/help/matlab/parquet-files.html?lang=en).
 - In Stata, I have not tested the `stata-parquet` ([GitHub](https://github.com/mcaceresb/stata-parquet)). You can use Python to transform them into CSV or `.dta` format.
 
 You can use URL to always read the most updated version of link tables:
@@ -29,7 +29,7 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 - `ciq_company_id-ticker`: Capital IQ Company ID to ticker
 - `ciq_company_id`: Capital IQ Company ID.
 - `company_fkey`: Company Fkey from Audit Analytics
-- `company_name`: Company name (If you are doing fuzzy match on company name, try this dataset!)
+- `company_name`: Company name (If you are doing a fuzzy match on the company name, try this dataset!)
 - `cusip`: [CUSIP](https://en.wikipedia.org/wiki/CUSIP).
 - `ds_code`: Refinitiv Datastream Code.
 - `ds_infocode`: Refinitiv Datastream InfoCode.
@@ -44,4 +44,4 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 - `ws_sctyppi`: Refinitiv Worldscope Permanent ID.
 - `fisd_issue_id`: Mergent FISD bond issue ID map to ISIN.
 - `fisd_issuer_id`: Mergent FISD bond issuer ID map to ISIN.
-
+- `stkcd_china.parquet`: CSMAR/Wind Chinese stock market code to ISIN.
