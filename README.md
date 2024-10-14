@@ -4,6 +4,12 @@ This project aims to provide integrated link tables between [ISIN](https://en.wi
 
 Since many link tables are too large, please refer to this [Dropbox](https://www.dropbox.com/sh/uab0vzoxh47wt2j/AACynrEpzjjrH_WD0F8VXX2Ra?dl=0) folder.
 
+Just in case you are interested in similar data tools, I also constructed:
+- [Standardized Country Code](https://github.com/Wenzhi-Ding/Std_Country_Code)
+- [Fama French Industry to SIC Link](https://github.com/Wenzhi-Ding/FamaFrenchIndustry)
+
+Please star the projects if you feel it is useful! Many thanks for your appreciation and support!
+
 ## Usage
 
 The data format is [Parquet](https://parquet.apache.org/docs/). To read these files:
