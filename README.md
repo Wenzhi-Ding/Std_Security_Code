@@ -2,6 +2,8 @@
 
 This project aims to provide integrated link tables between [ISIN](https://en.wikipedia.org/wiki/International_Securities_Identification_Number) and many other company/security identity codes.
 
+**If you find any link to be outdated, please email me and I will update it.**
+
 Since many link tables are too large, please refer to this [Dropbox](https://www.dropbox.com/sh/uab0vzoxh47wt2j/AACynrEpzjjrH_WD0F8VXX2Ra?dl=0) folder.
 
 Just in case you are interested in similar data tools, I also constructed:
@@ -27,9 +29,9 @@ import pandas as pd
 df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main/isin/a4_orgid.pq?raw=true')
 ```
 
-## Table of Contents
+## Table of Contents (ISIN-centered)
 
-- `a4_orgid`: Refinitiv ESG (formerly ASSET4) OrgID.
+- `a4_orgid`: Thomson Reuters/Refinitiv (LSEG) ESG (formerly ASSET4) OrgID.
 - `cik`: U.S. SEC's [Central Index Key](https://en.wikipedia.org/wiki/Central_Index_Key)
 - `ciq_company_id-cusip`: Capital IQ Company ID to CUSIP
 - `ciq_company_id-ticker`: Capital IQ Company ID to ticker
@@ -37,17 +39,28 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 - `company_fkey`: Company Fkey from Audit Analytics
 - `company_name`: Company name (If you are doing a fuzzy match on the company name, try this dataset!)
 - `cusip`: [CUSIP](https://en.wikipedia.org/wiki/CUSIP).
-- `ds_code`: Refinitiv Datastream Code.
-- `ds_infocode`: Refinitiv Datastream InfoCode.
+- `ds_code`: Thomson Reuters/Refinitiv (LSEG) Datastream Code.
+- `ds_infocode`: Thomson Reuters/Refinitiv (LSEG) Datastream InfoCode.
 - `ein`: U.S. [Employer Identification Number](https://en.wikipedia.org/wiki/Employer_Identification_Number)
-- `gvkey`: Global Company Key (GVKEY)
+- `fisd_issue_id`: FISD issue ID
+- `fisd_issuer_id`: FISD issuer ID
 - `gvkey_iid`: Global Company Key (GVKEY) and Issue ID (IID).
+- `gvkey`: Global Company Key (GVKEY)
 - `ibes_ticker`: IBES ticker.
 - `reprisk_id`: RepRisk ID.
+- `ric`: Thomson Reuters/Refinitiv (LSEG) RIC. **Too large. Access from [Dropbox](https://www.dropbox.com/sh/uab0vzoxh47wt2j/AACynrEpzjjrH_WD0F8VXX2Ra?dl=0).**
 - `sedol`: [SEDOL](https://en.wikipedia.org/wiki/SEDOL).
 - `sp_institutionid`: S&P Global institution ID.
+- `stkcd_china`: China stock code.
 - `ticker`: Stock ticker.
-- `ws_sctyppi`: Refinitiv Worldscope Permanent ID.
-- `fisd_issue_id`: Mergent FISD bond issue ID map to ISIN.
-- `fisd_issuer_id`: Mergent FISD bond issuer ID map to ISIN.
-- `stkcd_china.parquet`: CSMAR/Wind Chinese stock market code to ISIN.
+- `ws_sctyppi`: Thomson Reuters/Refinitiv (LSEG) Worldscope Permanent ID.
+
+## Table of Contents (Other)
+
+Here I provide some other link. Mostly from WRDS. Please make sure you have rights to access the corresponding link table. This is just for your convenient of downloading link tables.
+
+- `cik_cusip`: CIK to CUSIP mapping.
+- `cik_gvkey`: CIK to GVKEY mapping.
+- `cik_names`: CIK to company name mapping.
+- `cik_ticker`: CIK to ticker mapping.
+- `gvkey_permco_permno`: Compustat's GVKEY to CRSP's PERMNO and PERMCO.
