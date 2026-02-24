@@ -2,9 +2,9 @@
 
 This project aims to provide integrated link tables between [ISIN](https://en.wikipedia.org/wiki/International_Securities_Identification_Number) and many other company/security identity codes.
 
-**If you find any link to be outdated, please email me and I will update it.**
+**If you find any link to be outdated, please email me (wenzhi.ding@outlook.com) and I will update it.**
 
-Since many link tables are too large, please refer to this [Dropbox](https://www.dropbox.com/sh/uab0vzoxh47wt2j/AACynrEpzjjrH_WD0F8VXX2Ra?dl=0) folder.
+Some link tables are too large to be hosted on GitHub. Please email me to obtain them (see ⚠️ marks below).
 
 Just in case you are interested in similar data tools, I also constructed:
 - [Standardized Country Code](https://github.com/Wenzhi-Ding/Std_Country_Code)
@@ -33,11 +33,11 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 
 - `a4_orgid`: Thomson Reuters/Refinitiv (LSEG) ESG (formerly ASSET4) OrgID.
 - `cik`: U.S. SEC's [Central Index Key](https://en.wikipedia.org/wiki/Central_Index_Key)
-- `ciq_company_id-cusip`: Capital IQ Company ID to CUSIP
+- `ciq_company_id-cusip`: Capital IQ Company ID to CUSIP. ⚠️ **Too large for GitHub. Email me to obtain.**
 - `ciq_company_id-ticker`: Capital IQ Company ID to ticker
-- `ciq_company_id`: Capital IQ Company ID.
+- `ciq_company_id`: Capital IQ Company ID. ⚠️ **Too large for GitHub. Email me to obtain.**
 - `company_fkey`: Company Fkey from Audit Analytics
-- `company_name`: Company name (If you are doing a fuzzy match on the company name, try this dataset!)
+- `company_name`: Company name (If you are doing a fuzzy match on the company name, try this dataset!) ⚠️ **Too large for GitHub. Email me to obtain.**
 - `cusip`: [CUSIP](https://en.wikipedia.org/wiki/CUSIP).
 - `ds_code`: Thomson Reuters/Refinitiv (LSEG) Datastream Code.
 - `ds_infocode`: Thomson Reuters/Refinitiv (LSEG) Datastream InfoCode.
@@ -48,7 +48,7 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 - `gvkey`: Global Company Key (GVKEY)
 - `ibes_ticker`: IBES ticker.
 - `reprisk_id`: RepRisk ID.
-- `ric`: Thomson Reuters/Refinitiv (LSEG) RIC. **Too large. Access from [Dropbox](https://www.dropbox.com/sh/uab0vzoxh47wt2j/AACynrEpzjjrH_WD0F8VXX2Ra?dl=0).**
+- `ric`: Thomson Reuters/Refinitiv (LSEG) RIC. ⚠️ **Too large for GitHub. Email me to obtain.**
 - `sedol`: [SEDOL](https://en.wikipedia.org/wiki/SEDOL).
 - `sp_institutionid`: S&P Global institution ID.
 - `stkcd_china`: China stock code.
