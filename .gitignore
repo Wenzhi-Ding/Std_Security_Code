@@ -5,3 +5,7 @@ isin/ric.parquet
 isin/company_name.pq
 isin/ciq_company_id-cusip.pq
 isin/ciq_company_id.pq
+
+AGENTS.md
+.agent_workspace/
+TRACK.md
