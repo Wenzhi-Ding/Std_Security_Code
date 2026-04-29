@@ -64,3 +64,11 @@ Here I provide some other link. Mostly from WRDS. Please make sure you have righ
 - `cik_names`: CIK to company name mapping.
 - `cik_ticker`: CIK to ticker mapping.
 - `gvkey_permco_permno`: Compustat's GVKEY to CRSP's PERMNO and PERMCO.
+
+## Important Notes
+
+- **Static Link Relationships:** This dataset captures only static identifier linkages at the time of construction. Certain mappings may have been valid only during specific historical periods and may no longer reflect current relationships. Users should be aware of this temporal limitation and exercise appropriate caution when interpreting the data.
+
+- **Intended Use:** This dataset is primarily suited for preliminary exploration and rapid validation of ideas. It is **not recommended** for direct use in published research or formal reports without independent verification of the underlying linkages.
+
+- **Data Types:** Where applicable, fields that can be represented as integers (e.g., GVKEY) are stored as integer types rather than zero-padded strings. Users who require string-formatted values with leading zeros should perform the necessary formatting conversions themselves.
