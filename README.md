@@ -33,7 +33,7 @@ df = pd.read_parquet('https://github.com/Wenzhi-Ding/Std_Security_Code/blob/main
 
 - `a4_orgid`: Thomson Reuters/Refinitiv (LSEG) ESG (formerly ASSET4) OrgID.
 - `cik`: U.S. SEC's [Central Index Key](https://en.wikipedia.org/wiki/Central_Index_Key)
-- `ciq_company_id-cusip`: Capital IQ Company ID to CUSIP. ⚠️ **Too large for GitHub. Email me to obtain.**
+- `ciq_company_id-cusip`: Capital IQ Company ID to CUSIP.
 - `ciq_company_id-ticker`: Capital IQ Company ID to ticker
 - `ciq_company_id`: Capital IQ Company ID. ⚠️ **Too large for GitHub. Email me to obtain.**
 - `company_fkey`: Company Fkey from Audit Analytics
