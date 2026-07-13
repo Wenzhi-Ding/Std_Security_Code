@@ -3,7 +3,6 @@
 # Large data files (>100MB) - contact author via email to obtain
 isin/ric.parquet
 isin/company_name.pq
-isin/ciq_company_id-cusip.pq
 isin/ciq_company_id.pq
 
 AGENTS.md
